@@ -20,7 +20,7 @@ function Navbar() {
   const user = useUser();
 
   return (
-    <nav>
+    <nav className="navbar_header">
       <a href="/" className="idea-tracker">Idea tracker</a>
       <div className="navbar-right">
         {user.current ? (
@@ -31,7 +31,7 @@ function Navbar() {
             </button>
           </>
         ) : (
-          <a href="/login">Login</a>
+          <a href="/login" className="login-link">Log in</a>
         )}
       </div>
     </nav>
